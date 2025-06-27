@@ -5,7 +5,7 @@ function getQuery() {
 }
 
 function search(searchTerm){
-    apikey = "03fccc8781c8422485e134758252606";
+    apikey = "_API_KEY_";
     fetch("https://api.weatherapi.com/v1/current.json"+"?key="+apikey+"&q="+searchTerm).then(res=>res.json()).then(data=>{
         document.getElementById("detail-area").innerHTML=`
  <a class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
