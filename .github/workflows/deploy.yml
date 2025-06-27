@@ -16,7 +16,7 @@ jobs:
 
       - name: Replace placeholder in script.js
         run: |
-          sed -i "s/_API_KEY_/${{ secrets.API_WEATHER_KEY }}/g" app.js
+          sed -i "s/_API_KEY_/${{ secrets.WEATHER_APP_API_KEY }}/g" app.js
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
